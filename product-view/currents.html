@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Currents - Tame Impala</title>
+  <script src="../scripts/forms.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="header__flex">
+        <a href="../index.html"><img class="header__logo" src="../images/logo.png" alt=""><span class="visually-hidden">Back To The Future Vinyl</span></a>
+        <div class="header__search">
+          <input class="header__search-bar" type="text">
+          <div class="header__search-img"></div>
+        </div>
+      </div>
+      <div class="header__flex">
+        <nav class="header__nav">
+          <div class="header__nav--hover"><a href="../index.html">HOME</a></div>
+          <div class="header__nav--hover"><a href="../services/services.html">SERVICES</a></div>
+          <div class="header__nav--hover"><a href="../categories/categories.html">CATEGORIES</a></div>
+          <div class="header__nav--hover"><a href="../blog/blog.html">BLOG</a></div>
+        </nav>
+        <div class="header__btn">
+          <a class="header__btn--log" onclick="openFormL()" href="#">LOG IN</a>
+          <div class="form-popup" id="form-log-in">
+            <button class="form-popup__btn--close" onclick="closeFormL()">X</button>
+            <form action="" class="form-popup__container">
+              <h2 class="form-popup__tittle">LOG IN</h2>
+              <label class="visually-hidden" for="name">Enter your name</label>
+              <input class="form-popup__input" type="text" id="name" name="name" placeholder="Name"/>
+              <label class="visually-hidden" for="last-name">Enter your last name</label>
+              <input class="form-popup__input" type="text" id="last-name" name="last-name" placeholder="Last name"/>
+              <label class="visually-hidden" for="email">Enter your email</label>
+              <input class="form-popup__input" type="email" id="email" name="email" placeholder="Email"/>
+              <label class="visually-hidden" for="password">Enter your password</label>
+              <input class="form-popup__input form-popup__input--last" type="password" id="password" name="password" placeholder="Password"/>
+              <div class="form-popup__center">
+                <button type="submit" class="form-popup__btn">Start</button>
+              </div>
+            </form>
+          </div>
+          <a class="header__btn--sign" onclick="openFormS()" href="#">SIGN UP</a>
+          <div class="form-popup form-popup__sign-up" id="form-sign-up">
+            <button class="form-popup__btn--close form-popup__btn--close--sign" onclick="closeFormS()">X</button>
+            <form action="" class="form-popup__container">
+              <h2 class="form-popup__tittle">SIGN UP</h2>
+              <label class="visually-hidden" for="email">Enter your email</label>
+              <input class="form-popup__input" type="email" id="email" name="email" placeholder="Email"/>
+              <label class="visually-hidden" for="password">Enter your password</label>
+              <input class="form-popup__input" type="password" id="password" name="password" placeholder="Password"/>
+              <a class="form-popup__forget form-popup__center" href="#">Olvidé mi contraseña</a>
+              <div class="form-popup__center">
+                <button type="submit" class="form-popup__btn">Start</button>
+              </div>
+            </form>
+          </div>
+        </div> 
+      </div> 
+    </div>
+  </header>
+  <main>
+    <section class="view">
+      <div class="view__img">
+        <img src="../images/currents-tameimpala__categories.png" alt="">
+      </div>
+      <div class="view__content">
+        <h1>Currents - Tame Impala</h1>
+        <p>Currents is the third studio album by Australian musical project Tame Impala. It was released on 17 July 2015 by Modular Recordings and Universal Music Australia.</p>
+        <div class="view__price">
+          <p style="font-size: 40px;">$9.99</p>
+          <div class="view__price--utility">
+            <a href="../cart/cart.html" class="view__anchor">Add to cart</a>
+            <div class="view__button">
+            <button class="view__plus" id="suma" style="color:#F2EFEB;">+<span class="visually-hidden">More</span></button>
+            <p id="quantity">1</p>
+            <button class="view__minus" id="resta" style="color:#F2EFEB;">-<span class="visually-hidden">Less</span></button>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div>
+        <img class="footer__logo" src="../images/logo.png" alt="">
+      </div>
+      <div>
+        <ul class="footer__nav footer__media">
+          <li class="footer__nav--facebook footer__media--icons">
+            <a href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="footer__nav--instagram footer__media--icons">
+            <a href="#"><span class="visually-hidden">Vimeo</span></a>
+          </li>
+          <li class="footer__nav--youtube footer__media--icons">
+            <a href="#"><span class="visually-hidden">Instagram</span></a>
+          </li>
+          <li class="footer__nav--twitter footer__media--icons">
+            <a href="#"><span class="visually-hidden">Twitter</span></a>
+          </li>
+        </ul>
+      </div>
+    <!-- /////////////SECCION DE FORM ///////////-->
+      <div class="form">
+        <form>
+            <div class="form__newsletter">
+              <p><span class="form__newsletter--subscribe">NEWSLETTER</span><span class="form__newsletter--subscribe">SUBSCRIBE</span> </p>
+              <label class="visually-hidden enter-email" for="email">Enter your email</label>
+              <input type="email" id="form__newsletter--email" name="email" placeholder="Enter your email"/>            </div>
+            </div>
+        </form>
+      </div>
+      <div class="footer__rights">
+        <p class="footer__rights--text">© Back to the future vinyl</p>
+        <p class="footer__rights--text">All right reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/suma.js"></script>
+</body>
+</html>

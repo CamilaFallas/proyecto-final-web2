@@ -1,0 +1,82 @@
+@use './partials/categories';
+@use './partials/card';
+@use './partials/footer';
+@use './partials/slideshow';
+@use './partials/services-block-ds';
+@use './partials/cart';
+@use './partials/header';
+@use './partials/colors';
+@use './partials/blog';
+@use './partials/pop-up-form';
+@use './partials/product-view';
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  color: black;
+}
+
+body {
+  font-family: "Rubik";
+  margin: 0 auto;
+  color: colors.$black;
+}
+
+h1, h2 {
+  color: colors.$black;
+}
+
+h1 {
+  margin-left: 12%;
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: colors.$white;
+}
+  
+button {
+  background: none;
+  border: none;
+  color: colors.$white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+input {
+  font-size: 24px;
+  padding: 20px 8px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: colors.$black;
+}
+
+.buttons {
+  padding: 10px 75px;
+  background-color: colors.$black;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: solid 2px colors.$black;
+}
+
+.buttons:hover {
+  background-color: white;
+  color: colors.$black;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

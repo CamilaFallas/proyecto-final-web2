@@ -1,0 +1,279 @@
+@use './colors';
+
+.block__content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.block__content--ds {
+  width: 1218px;
+  height: 536px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 12%;
+}
+
+.block__div--ds {
+  width: 496px;
+  height: 496px;
+  margin-right: 50px;
+}
+
+.block__div-info {
+  width: 460px;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 44px;
+}
+
+.block__div-tittle {
+  font-size: 40px;
+}
+
+.block__anchor--ds {
+  width: 215px;
+  height: 60px;
+  background-color: colors.$black;
+  border-radius: 30px;
+  margin-top: 49.5px;
+  padding: 15px 50px;
+  color: colors.$white;
+  font-size: 22px;
+  line-height: 26px;
+  position: relative;
+  top: 15px;
+}
+
+.block__anchor--ds:hover {
+  border: solid 2px colors.$black;
+  color: colors.$black;
+  background-color: colors.$white;
+}
+
+.block_img--ds {
+  width: 696px;
+  height: 481px;
+}
+
+.block__content--reverse--ds {
+  margin-top: 148px;
+  width: 1218px;
+  height: 536px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  margin-bottom: 100px;
+  margin-left: 12%;
+}
+
+.block__div--reverse--ds {
+  width: 496px;
+  height: 496px;
+  margin-left: 50px;
+}
+
+.block__content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hero__title {
+  font-size: 24px;
+  display: flex;
+  margin-left: 12%;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+
+.hero__title-tittle {
+  font-size: 60px;
+  display: flex;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 320px){  
+  .block__content--ds {
+    flex-direction: column-reverse;
+    margin: 0;
+    margin-top: 30%;
+    margin-bottom: 40%;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .block__content--reverse--ds {
+    flex-direction: column-reverse;
+    margin: 0;
+    margin-top: 70%;
+    margin-bottom: 100%;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .block__div--ds {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .block__div--reverse--ds {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hero__title {
+    margin-left: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .block__img--ds img {
+    width: 100%;
+  }
+
+  .block__div-info {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px){
+  .block__content--ds {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    margin-bottom: 30%;
+    margin-left: 0;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .block__content--reverse--ds {
+    flex-direction: column-reverse;
+    margin-bottom: 75%;
+    margin-left: 0;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .hero__title h1 {
+    font-size: 50px;
+  }
+
+  .block__img--ds img {
+    width: 100%;
+  }
+
+  .block__div--ds {
+    width: 100%;
+    margin: 0;
+  }
+  .block__div--ds p {
+    width: 100%;
+  }
+
+  .block__div--reverse--ds {
+    width: 100%;
+    margin: 0;
+  }
+  .block__div--reverse--ds p {
+    width: 100%;
+  }
+
+  .hero__title {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .block__content--ds {
+    flex-direction: column-reverse;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+    margin-left: 0;
+    padding: 0 40px;
+  }
+
+  .block__content--reverse--ds {
+    flex-direction: column-reverse;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+    margin-left: 0;
+    padding: 0 40px;
+  }
+
+  .hero__title-tittle {
+    font-size: 50px;
+  }
+  
+  .block__img--ds-pic {
+    width: 100%;
+  }
+  
+  .block__div--ds {
+    margin: 0;
+  }
+
+  .block__div--ds-info {
+    width: 100%;
+  }
+  
+  .block__div--reverse--ds {
+    margin: 0;
+  }
+
+  .block__div--reverse--ds-info {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block__content--ds {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 90px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .block__div {
+    margin-left: 40px;
+  }
+
+  .block__content--reverse--ds {
+    width: 100%;
+    margin: 0 12%
+  }
+
+  .hero__title-tittle {
+    font-size: 50px;
+  }
+  
+  .block__img--ds-pic {
+    width: 100%;
+  }
+  
+  .block__div--ds {
+    width: 100%;
+  }
+
+  .block__div--ds-info {
+    width: 100%;
+  }
+  
+  .block__div--reverse--ds {
+    width: 100%;
+  }
+
+  .block__div--reverse--ds-info {
+    width: 100%;
+  }
+}
+
+    

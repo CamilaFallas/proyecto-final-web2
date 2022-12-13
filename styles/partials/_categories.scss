@@ -1,0 +1,139 @@
+@use './colors';
+ 
+.categories__container {
+  margin: 0 auto;
+  max-width: 1900px;
+}
+
+.sidebar {
+  background-color: colors.$black;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 3px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+ 
+.sidebar__title {
+  color: colors.$white;
+  text-align: center;
+  margin: 25px 0 15px 0;
+  font-size: 24px;
+}
+
+.sidebar__filters {
+  background-color: colors.$white;
+  font-weight: bold;
+  padding: 3px;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 200px;
+  margin: 15px auto;
+}
+ 
+.sidebar__categories--buttons {
+  color: colors.$black;
+}
+ 
+.sidebar__search--bar {
+  height: 45px;
+  width: 80%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+ 
+.sidebar__search--img {
+  content: "";
+  background: url(../images/icons/search.svg) no-repeat;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  right: -75%;
+  top: -39px;
+  margin-bottom: -25px;
+  cursor: pointer;
+}
+
+// ------ cards -------
+ 
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.card {
+  margin: 0 20px 35px 20px;
+}
+ 
+@media(min-width: 480px) {
+  .sidebar__search--bar {
+    width: 65%;
+    max-width: 450px;
+  }
+ 
+  .sidebar__filters {
+    width: 300px;
+  }
+
+  .sidebar__search--img {
+    right: -75%;
+  }
+}
+
+@media(min-width: 768px) {
+  .sidebar__search--bar {
+    width: 50%;
+    max-width: 475px;
+  }
+ 
+  .sidebar__filters {
+    width: 300px;
+  }
+
+  .sidebar__search--img {
+    right: -70%;
+  }
+}
+
+@media(min-width: 1024px) {
+  .categories__container {
+    display: flex;
+  }
+ 
+  .sidebar {
+    height: 620px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 35px;
+    margin-left: 12%;
+  }
+ 
+  .sidebar__title {
+    margin: 80px 0;
+    font-size: 40px;
+  }
+ 
+  .sidebar__filters {
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 360px;
+  }
+ 
+  .sidebar__search--bar {
+    height: 50px;
+    width: 100%;
+    max-width: 360px;
+  }
+ 
+  .sidebar__search--img {
+    right: -79%;
+  }
+
+  .card {
+    margin: 0 0px 35px 65px;
+  }
+}
